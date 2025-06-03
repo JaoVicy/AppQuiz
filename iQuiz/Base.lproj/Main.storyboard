@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,38 +13,51 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Z4y-7I-Ejt">
-                                <rect key="frame" x="76" y="213" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Z4y-7I-Ejt">
+                                <rect key="frame" x="79" y="234.66666666666663" width="217" height="104"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLt-ZQ-keh">
-                                <rect key="frame" x="102" y="474" width="189" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E51-ST-Cas">
+                                <rect key="frame" x="64" y="388.66666666666669" width="247" height="35"/>
                                 <color key="backgroundColor" red="0.44705885649999999" green="0.32156863810000003" blue="0.77254903320000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Iniciar">
-                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="plain" title="Iniciar"/>
+                                <connections>
+                                    <action selector="botaoPressionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oc6-3Q-aZT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="E51-ST-Cas" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0ge-Um-UiW"/>
+                            <constraint firstItem="E51-ST-Cas" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="734-jM-Tl1"/>
+                            <constraint firstItem="E51-ST-Cas" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Zk-mr-Dgn"/>
+                            <constraint firstItem="Z4y-7I-Ejt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AZ4-y9-wZd"/>
+                            <constraint firstItem="E51-ST-Cas" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="Bga-rB-NNE"/>
+                            <constraint firstItem="E51-ST-Cas" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DsY-Ac-xwA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E51-ST-Cas" secondAttribute="trailing" constant="64" id="JAx-jl-wEQ"/>
+                            <constraint firstItem="E51-ST-Cas" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="c4M-hh-Rvg"/>
+                            <constraint firstItem="E51-ST-Cas" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cny-f4-Q5Q"/>
+                            <constraint firstItem="E51-ST-Cas" firstAttribute="top" secondItem="Z4y-7I-Ejt" secondAttribute="bottom" constant="50" id="fYh-bT-WVj"/>
+                            <constraint firstItem="E51-ST-Cas" firstAttribute="top" secondItem="Z4y-7I-Ejt" secondAttribute="bottom" constant="50" id="kzn-cX-Thc"/>
+                            <constraint firstItem="Z4y-7I-Ejt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="prS-hn-F4d"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="botaoIniciar" destination="E51-ST-Cas" id="K7P-ND-92h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122.90076335877862" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="122.40000000000001" y="-2.2167487684729066"/>
         </scene>
     </scenes>
     <resources>
         <image name="Logo" width="217" height="104"/>
-        <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
