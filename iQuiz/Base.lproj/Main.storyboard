@@ -17,14 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Z4y-7I-Ejt">
-                                <rect key="frame" x="79" y="234.66666666666663" width="217" height="104"/>
+                                <rect key="frame" x="79" y="232" width="217" height="104"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E51-ST-Cas">
-                                <rect key="frame" x="64" y="388.66666666666669" width="247" height="35"/>
+                                <rect key="frame" x="64" y="386" width="247" height="40.333333333333314"/>
                                 <color key="backgroundColor" red="0.44705885649999999" green="0.32156863810000003" blue="0.77254903320000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Iniciar"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Iniciar">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="botaoPressionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oc6-3Q-aZT"/>
                                     <segue destination="jya-Od-ZxW" kind="show" id="kou-el-kPe"/>
@@ -64,14 +66,80 @@
                     <view key="view" contentMode="scaleToFill" id="okG-re-9Tc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQY-qL-oJt">
+                                <rect key="frame" x="80" y="256" width="215" height="38.333333333333314"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyd-fV-I0Z">
+                                <rect key="frame" x="80" y="439.33333333333331" width="215" height="41"/>
+                                <color key="backgroundColor" red="0.44705885649999999" green="0.31764706970000001" blue="0.77254903320000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 01">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="respostaBotaoPressionado:" destination="jya-Od-ZxW" eventType="touchUpInside" id="Y6j-yZ-a6c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8b-5P-tT0">
+                                <rect key="frame" x="80" y="512.33333333333337" width="215" height="41"/>
+                                <color key="backgroundColor" red="0.44705885649999999" green="0.31764706970000001" blue="0.77254903320000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 01">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="respostaBotaoPressionado:" destination="jya-Od-ZxW" eventType="touchUpInside" id="7YB-ry-EPe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ht-uF-cBI">
+                                <rect key="frame" x="80" y="366.33333333333331" width="215" height="41"/>
+                                <color key="backgroundColor" red="0.44705885649999999" green="0.31764706970000001" blue="0.77254903320000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 01">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="respostaBotaoPressionado:" destination="jya-Od-ZxW" eventType="touchUpInside" id="zk3-rU-CTS"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wMB-Re-aBH"/>
                         <color key="backgroundColor" red="0.34117650989999998" green="0.33725491169999999" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="5ht-uF-cBI" secondAttribute="trailing" constant="64" id="Fhk-jF-vl0"/>
+                            <constraint firstItem="Pyd-fV-I0Z" firstAttribute="leading" secondItem="okG-re-9Tc" secondAttribute="leadingMargin" constant="64" id="HL7-gG-e8n"/>
+                            <constraint firstItem="bQY-qL-oJt" firstAttribute="leading" secondItem="okG-re-9Tc" secondAttribute="leadingMargin" constant="64" id="LIo-t4-Eif"/>
+                            <constraint firstItem="5ht-uF-cBI" firstAttribute="top" secondItem="bQY-qL-oJt" secondAttribute="bottom" constant="72" id="ZZH-gW-l5J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bQY-qL-oJt" secondAttribute="trailing" constant="64" id="cJZ-nu-sew"/>
+                            <constraint firstItem="bQY-qL-oJt" firstAttribute="top" secondItem="okG-re-9Tc" secondAttribute="topMargin" constant="112" id="ejk-fH-BEE"/>
+                            <constraint firstItem="Y8b-5P-tT0" firstAttribute="leading" secondItem="okG-re-9Tc" secondAttribute="leadingMargin" constant="64" id="hkv-Ti-OT1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pyd-fV-I0Z" secondAttribute="trailing" constant="64" id="oJQ-LG-sOB"/>
+                            <constraint firstItem="5ht-uF-cBI" firstAttribute="leading" secondItem="okG-re-9Tc" secondAttribute="leadingMargin" constant="64" id="oKq-BP-N4G"/>
+                            <constraint firstItem="Pyd-fV-I0Z" firstAttribute="top" secondItem="5ht-uF-cBI" secondAttribute="bottom" constant="32" id="oUF-hb-mNP"/>
+                            <constraint firstItem="Y8b-5P-tT0" firstAttribute="top" secondItem="Pyd-fV-I0Z" secondAttribute="bottom" constant="32" id="tmn-yU-Erf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y8b-5P-tT0" secondAttribute="trailing" constant="64" id="zRu-K8-J5E"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lzj-EQ-9dB"/>
+                    <connections>
+                        <outlet property="tituloQuestaoLabel" destination="bQY-qL-oJt" id="54a-h1-VZn"/>
+                        <outletCollection property="botoesRespostas" destination="5ht-uF-cBI" collectionClass="NSMutableArray" id="noV-af-ZTA"/>
+                        <outletCollection property="botoesRespostas" destination="5ht-uF-cBI" collectionClass="NSMutableArray" id="CvK-V4-zpx"/>
+                        <outletCollection property="botoesRespostas" destination="Pyd-fV-I0Z" collectionClass="NSMutableArray" id="PmD-gJ-mHV"/>
+                        <outletCollection property="botoesRespostas" destination="Y8b-5P-tT0" collectionClass="NSMutableArray" id="aBS-z8-OtH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJU-qa-vnR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1846" y="-2"/>
+            <point key="canvasLocation" x="1845.5999999999999" y="-2.2167487684729066"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qau-ku-jNk">
