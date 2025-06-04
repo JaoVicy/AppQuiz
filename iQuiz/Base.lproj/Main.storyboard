@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t7E-GR-Q9l">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
@@ -27,6 +27,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Iniciar"/>
                                 <connections>
                                     <action selector="botaoPressionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oc6-3Q-aZT"/>
+                                    <segue destination="jya-Od-ZxW" kind="show" id="kou-el-kPe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -47,11 +48,46 @@
                             <constraint firstItem="Z4y-7I-Ejt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="prS-hn-F4d"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ZL8-fM-O9N"/>
                     <connections>
                         <outlet property="botaoIniciar" destination="E51-ST-Cas" id="K7P-ND-92h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064.8" y="-2.2167487684729066"/>
+        </scene>
+        <!--Questao View Controller-->
+        <scene sceneID="4fQ-10-f4G">
+            <objects>
+                <viewController id="jya-Od-ZxW" customClass="QuestaoViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="okG-re-9Tc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wMB-Re-aBH"/>
+                        <color key="backgroundColor" red="0.34117650989999998" green="0.33725491169999999" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lzj-EQ-9dB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iJU-qa-vnR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1846" y="-2"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qau-ku-jNk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t7E-GR-Q9l" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jlM-2H-WIz">
+                        <rect key="frame" x="0.0" y="100" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iG7-bK-S7Q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="998-D0-rzq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="122.40000000000001" y="-2.2167487684729066"/>
         </scene>
