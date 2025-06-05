@@ -15,7 +15,7 @@ class QuestaoViewController: UIViewController {
     
     @IBAction func respostaBotaoPressionado(_ sender: UIButton) {
         
-        print(sender.tag)
+        print("O botão clicado tem a teg de: \(sender.tag)")
     }
     
     
