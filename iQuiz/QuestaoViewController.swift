@@ -23,10 +23,17 @@ class QuestaoViewController: UIViewController {
         
         if usuarioAcertouResposta {
             pontuacao += 1
-            print("Correto!")
+            sender.backgroundColor = UIColor(red: 176/255, green: 219/255, blue: 156/255, alpha: 1.0)
+        } else {
+            sender.backgroundColor = UIColor(red: 205/255, green: 86/255, blue: 86/255, alpha: 1.0)
         }
         
         print("O botão clicado tem a teg de: \(sender.tag)")
+        
+        if numeroQuestao < questoes.count - 1 {
+            numeroQuestao += 1
+            Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(configurarQuestao), userInfo: nil, repeats: false)
+        }
     }
     
     
@@ -48,12 +55,13 @@ class QuestaoViewController: UIViewController {
         }
     }
     
-    func configurarQuestao() {
+    @objc func configurarQuestao() {
         tituloQuestaoLabel.text = questoes[numeroQuestao].titulo
         
         for botao in botoesRespostas {
             let tituloBotao = questoes[numeroQuestao].respostas[botao.tag]
             botao.setTitle(tituloBotao, for: .normal)
+            botao.backgroundColor = UIColor(red: 114/255, green: 81/255, blue: 197/255, alpha: 1.0)
         }
     }
     
