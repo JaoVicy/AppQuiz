@@ -12,9 +12,11 @@ class QuestaoViewController: UIViewController {
     var pontuacao: Int = 0
     var numeroQuestao: Int = 0
     
+    // Objetos da tela do game:
     @IBOutlet weak var tituloQuestaoLabel: UILabel!
     @IBOutlet var botoesRespostas: [UIButton]!
     
+    // Funcões:
     @IBAction func respostaBotaoPressionado(_ sender: UIButton) {
         
         // A tag vai representar sempre um botão, se o botão clicado tiver a tag igual a variável de "respostaCorreta" é um acerto.
