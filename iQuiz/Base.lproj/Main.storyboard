@@ -135,6 +135,7 @@
                         <outletCollection property="botoesRespostas" destination="5ht-uF-cBI" collectionClass="NSMutableArray" id="CvK-V4-zpx"/>
                         <outletCollection property="botoesRespostas" destination="Pyd-fV-I0Z" collectionClass="NSMutableArray" id="PmD-gJ-mHV"/>
                         <outletCollection property="botoesRespostas" destination="Y8b-5P-tT0" collectionClass="NSMutableArray" id="aBS-z8-OtH"/>
+                        <segue destination="t5z-Eb-GTr" kind="show" identifier="forDesempenho" id="V7f-Tf-rov"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJU-qa-vnR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -194,10 +195,16 @@
                             <constraint firstAttribute="trailing" secondItem="0tf-wk-nE0" secondAttribute="trailing" constant="64" id="pzu-qU-gD9"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="wPv-zR-J8t"/>
+                    <connections>
+                        <outlet property="botaoReiniciar" destination="Aoa-gF-Is3" id="LPU-k1-4JO"/>
+                        <outlet property="percentualLabel" destination="dpK-o6-TN6" id="4IB-Qa-kNm"/>
+                        <outlet property="resultadoLabel" destination="abt-Zo-jme" id="j28-JL-BmS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vkB-AF-4wP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2549.5999999999999" y="-2.2167487684729066"/>
+            <point key="canvasLocation" x="2588" y="-2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qau-ku-jNk">
