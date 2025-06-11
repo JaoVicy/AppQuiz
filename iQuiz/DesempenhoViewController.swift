@@ -22,6 +22,7 @@ class DesempenhoViewController: UIViewController {
         super.viewDidLoad()
 
         configurarLayout()
+        configurarDesempenho()
         }
     
     func configurarLayout() {
@@ -29,7 +30,11 @@ class DesempenhoViewController: UIViewController {
         navigationItem.hidesBackButton = true
     }
     
-    
+    func configurarDesempenho() {
+        guard let pontuacao = pontuacao else { return }
+        
+        resultadoLabel.text = "Você acertou \(pontuacao) de \(questoes.count)"
+    }
     
 
     /*
