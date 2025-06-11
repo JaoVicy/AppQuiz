@@ -176,6 +176,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Reiniciar Quiz">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="td6-CB-7rJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eS1-wk-o2X"/>
@@ -225,6 +228,9 @@
             <point key="canvasLocation" x="122.40000000000001" y="-2.2167487684729066"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="iG7-bK-S7Q"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Logo" width="217" height="104"/>
         <systemColor name="systemIndigoColor">
