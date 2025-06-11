@@ -26,7 +26,10 @@ class DesempenhoViewController: UIViewController {
     
     func configurarLayout() {
         botaoReiniciar.layer.cornerRadius = 12.0
+        navigationItem.hidesBackButton = true
     }
+    
+    
     
 
     /*
