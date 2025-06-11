@@ -47,7 +47,10 @@ class QuestaoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // Randomizar as questões:
+        questoes = questoes.shuffled()
+        
         configurarLayout()
         configurarQuestao()
     }

@@ -13,7 +13,7 @@ struct Questao {
     var respostaCorreta: Int
 }
 
-let questoes: [Questao] = [
+var questoes: [Questao] = [
     Questao(
     titulo: "Qual é o primeiro elemento da tabela periódica?", respostas: ["C", "H", "CU"], respostaCorreta: 1),
     Questao(
