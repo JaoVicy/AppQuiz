@@ -23,8 +23,7 @@ Bem-vindo ao **AppQuiz**, um aplicativo de quiz desenvolvido em Swift utilizando
 
 ## 📸 Capturas de Tela
 
-Adicione aqui algumas imagens do aplicativo (telas principais, tela de quiz, etc.).
-
+....
 ---
 
 ## 📦 Instalação
