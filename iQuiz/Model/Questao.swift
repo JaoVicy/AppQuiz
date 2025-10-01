@@ -17,7 +17,7 @@ var questoes: [Questao] = [
     Questao(
     titulo: "Qual é o primeiro elemento da tabela periódica?", respostas: ["C", "H", "CU"], respostaCorreta: 1),
     Questao(
-    titulo: "Quem é mas velho?", respostas: ["Picolo", "Gohan", "Goku"], respostaCorreta: 2),
+    titulo: "Quem é mais velho?", respostas: ["Picolo", "Gohan", "Goku"], respostaCorreta: 2),
     Questao(
     titulo: "Que cor é cosiderada primaria?", respostas: ["Azul", "Roxo", "Rosa"], respostaCorreta: 0),
     Questao(
